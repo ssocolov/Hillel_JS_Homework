@@ -17,10 +17,10 @@ drawTriangle (5, "*");
 console.log("______2______")
 
 function drawTriangle1(height, symbol) {
-    for (let i = 1; i <= height; i++) {
-        let row = '';
-        for (let n = 1; n <= i; n++) {
-            row += symbol;
+    for (let i = 1; i <= height; i++) {  //цикл отвечает за каждую строку треугольника где i-это номер строки
+        let row = '';                       //в каждой строке мы создаем переменную row
+        for (let n = 1; n <= i; n++) {      // проходим от 1 до n, n-номер текущей строки
+            row += symbol;                  //добавляем количество символов соответствующее номеру строки
         }
         console.log(row);
     }
