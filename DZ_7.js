@@ -63,4 +63,4 @@ function checkProbabilityTheory(count) {
     console.log("Відсоток парних до непарних: " + percentEven.toFixed(1) + "% : " + percentNot_even.toFixed(1) + "%");
 }
 
-checkProbabilityTheory(853);
+checkProbabilityTheory(100);
