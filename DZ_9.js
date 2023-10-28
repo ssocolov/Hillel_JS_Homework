@@ -81,12 +81,14 @@ const company = {
 
 function findValueByKey(object, companyName) {
     if (object.name === companyName) {
-        return object;
+        return {
+            object,
+        };
     } else {
         for (let i in object) {
             if (Array.isArray(object[i])) {
                 for (let o = 0; o < object[i].length; o++) {
-                    if (typeof object[i][o] === "object") {
+                    if (typeof object[i] === "object") {
                         let rec_findValueByKey = findValueByKey(object[i][o], companyName);
                         if (rec_findValueByKey != undefined) {
                             return rec_findValueByKey;
@@ -98,4 +100,4 @@ function findValueByKey(object, companyName) {
     }
     return null;
 }
-console.log(findValueByKey(company, 'Qwerty'));
+console.log(findValueByKey(company, 'Велика Компанія'));
