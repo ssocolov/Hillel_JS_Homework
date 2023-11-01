@@ -100,4 +100,4 @@ function findValueByKey(object, companyName) {
     }
     return null;
 }
-console.log(findValueByKey(company, 'Велика Компанія'));
+console.log(findValueByKey(company, 'Qwerty'));
